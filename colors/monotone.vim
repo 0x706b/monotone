@@ -258,6 +258,7 @@ function s:MonotoneColors(color, secondary_hue_offset, emphasize_comments, empha
   hi CocWarningSign      guifg=#dd9922 ctermfg=214
   hi CocInfoSign         guifg=#00afff ctermfg=153
   hi CocHintSign         guifg=#00afff ctermfg=153
+  hi! link CocUnderline Search
 
   " Sneak
   call s:Hi('Sneak', '#000000', s:color_hl_3, 16, 153, 'NONE')
@@ -305,6 +306,8 @@ function s:MonotoneColors(color, secondary_hue_offset, emphasize_comments, empha
   hi! link tsxCloseString Delimiter
   hi! link tsxAttrib Normal
   hi! link tsxEqual Delimiter
+  call s:HiFG('typescriptDocNotation', s:color_bright_1, 'NONE', 'bolditalic')
+  hi! link typescriptDocTags typescriptDocNotation
 
   "scala syntax
 
