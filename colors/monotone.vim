@@ -258,7 +258,6 @@ function s:MonotoneColors(color, secondary_hue_offset, emphasize_comments, empha
   hi CocWarningSign      guifg=#dd9922 ctermfg=214
   hi CocInfoSign         guifg=#00afff ctermfg=153
   hi CocHintSign         guifg=#00afff ctermfg=153
-  hi! link CocUnderline Search
 
   " Sneak
   call s:Hi('Sneak', '#000000', s:color_hl_3, 16, 153, 'NONE')
