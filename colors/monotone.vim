@@ -305,7 +305,7 @@ function s:MonotoneColors(color, secondary_hue_offset, emphasize_comments, empha
   hi! link tsxTag Delimiter
   hi! link tsxCloseTag Delimiter
   hi! link tsxCloseString Delimiter
-  hi! link tsxAttrib Normal
+  hi! link tsxAttrib NormalTransparent
   hi! link tsxEqual Delimiter
   call s:HiFG('typescriptDocNotation', s:color_bright_1, 'NONE', 'bolditalic')
   hi! link typescriptDocTags typescriptDocNotation
