@@ -259,6 +259,8 @@ function s:MonotoneColors(color, secondary_hue_offset, emphasize_comments, empha
   hi CocInfoSign         guifg=#00afff ctermfg=153
   hi CocHintSign         guifg=#00afff ctermfg=153
 
+  call s:HiFG('CocUnderline', s:color_normal, 'NONE', 'bold,underline')
+
   " Sneak
   call s:Hi('Sneak', '#000000', s:color_hl_3, 16, 153, 'NONE')
   call s:Hi('SneakLabel', '#000000', s:color_hl_3, 16, 153, 'bold')
