@@ -310,6 +310,12 @@ function s:MonotoneColors(color, secondary_hue_offset, emphasize_comments, empha
   call s:HiFG('typescriptDocNotation', s:color_bright_1, 'NONE', 'bolditalic')
   hi! link typescriptDocTags typescriptDocNotation
 
+  hi! link jsxTagName Special
+  hi! link jsxComponentName Type
+  hi! link jsxOpenPunct Delimiter
+  hi! link jsxClosePunct Delimiter
+  hi! link jsxAttrib NormalTransparent
+
   "scala syntax
 
   call s:HiFG('scalaSquareBracketBracket', s:color_em_3, 'NONE', 'NONE')
@@ -327,15 +333,9 @@ function s:MonotoneColors(color, secondary_hue_offset, emphasize_comments, empha
   hi LspDiagnosticsDefaultWarning   guifg=#dd9922 ctermfg=214
   hi LspDiagnosticsDefaultInfo      guifg=#00afff ctermfg=153
   hi LspDiagnosticsDefaultHint      guifg=#00afff ctermfg=153
-  hi! link LspFloatWinNormal        Pmenu
-  call s:HiBG('LspSagaHoverBorder', s:color_dark_2, 'NONE', 'NONE')
-  call s:HiBG('LspSagaRenameBorder', s:color_dark_2, 'NONE', 'NONE')
-  call s:HiBG('LspSagaCodeActionBorder', s:color_dark_2, 'NONE', 'NONE')
-  call s:HiBG('LspSagaSignatureHelpBorder', s:color_dark_2, 'NONE', 'NONE')
-  call s:HiBG('LspSagaDefPreviewBorder', s:color_dark_2, 'NONE', 'NONE')
 
-  hi! link LspSagaDiagnosticBorder Normal
-  hi! link LspSagaDiagnosticTruncateLine Normal
+  hi! link LspSagaDiagnosticBorder NormalTransparent
+  hi! link LspSagaDiagnosticTruncateLine NormalTransparent
   hi! link LspSagaDiagnosticHeader WarningMsg
   hi! link LspSagaCodeActionTitle WarningMsg
 
