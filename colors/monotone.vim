@@ -339,6 +339,11 @@ function s:MonotoneColors(color, secondary_hue_offset, emphasize_comments, empha
   hi! link LspSagaDiagnosticHeader WarningMsg
   hi! link LspSagaCodeActionTitle WarningMsg
   hi! link NormalFloat NormalTransparent
+  hi! link LspSagaDiagnosticTruncateLine NormalTransparent
+  hi! link LspSagaShTruncateLine NormalTransparent
+  hi! link LspSagaDocTruncateLine NormalTransparent
+  hi! link LspSagaCodeActionTitle NormalTransparent
+
 
   " telescope
   hi! link TelescopeSelection CursorLine
