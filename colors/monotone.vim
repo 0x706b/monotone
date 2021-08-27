@@ -327,6 +327,12 @@ function s:MonotoneColors(color, secondary_hue_offset, emphasize_comments, empha
   hi LspDiagnosticsDefaultWarning   guifg=#dd9922 ctermfg=214
   hi LspDiagnosticsDefaultInfo      guifg=#00afff ctermfg=153
   hi LspDiagnosticsDefaultHint      guifg=#00afff ctermfg=153
+  hi! link LspFloatWinNormal        Pmenu
+  call s:HiBG('LspSagaHoverBorder', s:color_dark_2, 'NONE', 'NONE')
+  call s:HiBG('LspSagaRenameBorder', s:color_dark_2, 'NONE', 'NONE')
+  call s:HiBG('LspSagaCodeActionBorder', s:color_dark_2, 'NONE', 'NONE')
+  call s:HiBG('LspSagaSignatureHelpBorder', s:color_dark_2, 'NONE', 'NONE')
+  call s:HiBG('LspSagaDefPreviewBorder', s:color_dark_2, 'NONE', 'NONE')
 
   hi! link LspSagaDiagnosticBorder Normal
   hi! link LspSagaDiagnosticTruncateLine Normal
