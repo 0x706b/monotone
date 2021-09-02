@@ -314,6 +314,7 @@ function s:MonotoneColors(color, secondary_hue_offset, emphasize_comments, empha
   hi! link jsxComponentName Type
   hi! link jsxOpenPunct Delimiter
   hi! link jsxClosePunct Delimiter
+  hi! link jsxCloseString Delimiter
   hi! link jsxAttrib NormalTransparent
 
   "scala syntax
